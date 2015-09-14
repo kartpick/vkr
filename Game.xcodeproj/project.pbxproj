@@ -20,6 +20,9 @@
 		D16E0E991B9D6FD900AE2932 /* AGHeroSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E981B9D6FD900AE2932 /* AGHeroSprite.m */; };
 		D16E0EA31B9E96FA00AE2932 /* AGBackgroundSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */; };
 		D1DDDFF11BA6879700EEAAD7 /* GameHeroImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */; };
+		D1DDDFF41BA6BC5700EEAAD7 /* AGObstaclesSpawner.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDFF31BA6BC5700EEAAD7 /* AGObstaclesSpawner.m */; };
+		D1DDDFF71BA6BC6E00EEAAD7 /* AGObstacle.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DDDFF61BA6BC6E00EEAAD7 /* AGObstacle.m */; };
+		D1DDDFFF1BA6BD2100EEAAD7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDFFE1BA6BD2100EEAAD7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,11 @@
 		D16E0EA11B9E96FA00AE2932 /* AGBackgroundSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBackgroundSprite.h; sourceTree = "<group>"; };
 		D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBackgroundSprite.m; sourceTree = "<group>"; };
 		D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GameHeroImages.atlas; sourceTree = "<group>"; };
+		D1DDDFF21BA6BC5700EEAAD7 /* AGObstaclesSpawner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGObstaclesSpawner.h; sourceTree = "<group>"; };
+		D1DDDFF31BA6BC5700EEAAD7 /* AGObstaclesSpawner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGObstaclesSpawner.m; sourceTree = "<group>"; };
+		D1DDDFF51BA6BC6E00EEAAD7 /* AGObstacle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGObstacle.h; sourceTree = "<group>"; };
+		D1DDDFF61BA6BC6E00EEAAD7 /* AGObstacle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGObstacle.m; sourceTree = "<group>"; };
+		D1DDDFFE1BA6BD2100EEAAD7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GameHeroImages.atlas/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,20 +108,14 @@
 			children = (
 				D16E0E621B9D3EEC00AE2932 /* AppDelegate.h */,
 				D16E0E631B9D3EEC00AE2932 /* AppDelegate.m */,
+				D1DDDFFD1BA6BD0500EEAAD7 /* Images */,
+				D1DDDFFC1BA6BCD400EEAAD7 /* Models */,
+				D1DDDFFB1BA6BCC000EEAAD7 /* Controllers */,
 				D16E0E681B9D3EEC00AE2932 /* GameScene.sks */,
-				D16E0E6A1B9D3EEC00AE2932 /* GameViewController.h */,
-				D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */,
-				D16E0E6B1B9D3EEC00AE2932 /* GameViewController.m */,
 				D16E0E6D1B9D3EEC00AE2932 /* Main.storyboard */,
 				D16E0E701B9D3EEC00AE2932 /* Images.xcassets */,
 				D16E0E721B9D3EEC00AE2932 /* LaunchScreen.xib */,
 				D16E0E5E1B9D3EEC00AE2932 /* Supporting Files */,
-				D16E0E941B9D62FB00AE2932 /* AGGameScene.h */,
-				D16E0E951B9D62FB00AE2932 /* AGGameScene.m */,
-				D16E0E971B9D6FD900AE2932 /* AGHeroSprite.h */,
-				D16E0E981B9D6FD900AE2932 /* AGHeroSprite.m */,
-				D16E0EA11B9E96FA00AE2932 /* AGBackgroundSprite.h */,
-				D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -142,6 +144,65 @@
 				D16E0E7E1B9D3EEC00AE2932 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D1DDDFF81BA6BC8400EEAAD7 /* Obstacles */ = {
+			isa = PBXGroup;
+			children = (
+				D1DDDFF21BA6BC5700EEAAD7 /* AGObstaclesSpawner.h */,
+				D1DDDFF31BA6BC5700EEAAD7 /* AGObstaclesSpawner.m */,
+				D1DDDFF51BA6BC6E00EEAAD7 /* AGObstacle.h */,
+				D1DDDFF61BA6BC6E00EEAAD7 /* AGObstacle.m */,
+			);
+			name = Obstacles;
+			sourceTree = "<group>";
+		};
+		D1DDDFF91BA6BC8F00EEAAD7 /* Background */ = {
+			isa = PBXGroup;
+			children = (
+				D16E0EA11B9E96FA00AE2932 /* AGBackgroundSprite.h */,
+				D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */,
+			);
+			name = Background;
+			sourceTree = "<group>";
+		};
+		D1DDDFFA1BA6BCAE00EEAAD7 /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				D16E0E971B9D6FD900AE2932 /* AGHeroSprite.h */,
+				D16E0E981B9D6FD900AE2932 /* AGHeroSprite.m */,
+			);
+			name = Hero;
+			sourceTree = "<group>";
+		};
+		D1DDDFFB1BA6BCC000EEAAD7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D16E0E941B9D62FB00AE2932 /* AGGameScene.h */,
+				D16E0E951B9D62FB00AE2932 /* AGGameScene.m */,
+				D16E0E6A1B9D3EEC00AE2932 /* GameViewController.h */,
+				D16E0E6B1B9D3EEC00AE2932 /* GameViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D1DDDFFC1BA6BCD400EEAAD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1DDDFFA1BA6BCAE00EEAAD7 /* Hero */,
+				D1DDDFF91BA6BC8F00EEAAD7 /* Background */,
+				D1DDDFF81BA6BC8400EEAAD7 /* Obstacles */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D1DDDFFD1BA6BD0500EEAAD7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D1DDDFFE1BA6BD2100EEAAD7 /* Images.xcassets */,
+				D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +290,7 @@
 				D16E0E741B9D3EEC00AE2932 /* LaunchScreen.xib in Resources */,
 				D16E0E711B9D3EEC00AE2932 /* Images.xcassets in Resources */,
 				D16E0E691B9D3EEC00AE2932 /* GameScene.sks in Resources */,
+				D1DDDFFF1BA6BD2100EEAAD7 /* Images.xcassets in Resources */,
 				D16E0E6F1B9D3EEC00AE2932 /* Main.storyboard in Resources */,
 				D1DDDFF11BA6879700EEAAD7 /* GameHeroImages.atlas in Resources */,
 			);
@@ -248,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DDDFF41BA6BC5700EEAAD7 /* AGObstaclesSpawner.m in Sources */,
 				D16E0E6C1B9D3EEC00AE2932 /* GameViewController.m in Sources */,
 				D16E0E641B9D3EEC00AE2932 /* AppDelegate.m in Sources */,
 				D16E0EA31B9E96FA00AE2932 /* AGBackgroundSprite.m in Sources */,
+				D1DDDFF71BA6BC6E00EEAAD7 /* AGObstacle.m in Sources */,
 				D16E0E961B9D62FB00AE2932 /* AGGameScene.m in Sources */,
 				D16E0E991B9D6FD900AE2932 /* AGHeroSprite.m in Sources */,
 				D16E0E611B9D3EEC00AE2932 /* main.m in Sources */,

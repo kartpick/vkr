@@ -255,9 +255,9 @@ static inline CGFloat skRand(CGFloat low, CGFloat high){
     [self enumerateChildNodesWithName:@"Background" usingBlock:^(SKNode *node, BOOL *stop) {
         if (node.position.y + node.frame.size.height < 0)
             [node removeFromParent];
-        else if (node.position.x < -_backgroundSize.width * 2)
+        else if (node.position.x < -_backgroundSize.width)
             [node removeFromParent];
-        else if (node.position.x > self.size.width + _backgroundSize.width * 2)
+        else if (node.position.x > self.size.width + _backgroundSize.width)
             [node removeFromParent];
     }];
 }

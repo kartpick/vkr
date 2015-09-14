@@ -9,6 +9,6 @@
 #import <SpriteKit/SpriteKit.h>
 #import <CoreMotion/CoreMotion.h>
 
-@interface AGGameScene : SKScene
+@interface AGGameScene : SKScene <SKPhysicsContactDelegate>
 @property CGFloat HERO_RUNNING_SPEED;
 @end
