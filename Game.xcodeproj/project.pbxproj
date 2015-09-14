@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		D16E0E611B9D3EEC00AE2932 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E601B9D3EEC00AE2932 /* main.m */; };
 		D16E0E641B9D3EEC00AE2932 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E631B9D3EEC00AE2932 /* AppDelegate.m */; };
-		D16E0E671B9D3EEC00AE2932 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E661B9D3EEC00AE2932 /* GameScene.m */; };
 		D16E0E691B9D3EEC00AE2932 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D16E0E681B9D3EEC00AE2932 /* GameScene.sks */; };
 		D16E0E6C1B9D3EEC00AE2932 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E6B1B9D3EEC00AE2932 /* GameViewController.m */; };
 		D16E0E6F1B9D3EEC00AE2932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D16E0E6D1B9D3EEC00AE2932 /* Main.storyboard */; };
 		D16E0E711B9D3EEC00AE2932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D16E0E701B9D3EEC00AE2932 /* Images.xcassets */; };
 		D16E0E741B9D3EEC00AE2932 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D16E0E721B9D3EEC00AE2932 /* LaunchScreen.xib */; };
 		D16E0E801B9D3EEC00AE2932 /* GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E7F1B9D3EEC00AE2932 /* GameTests.m */; };
+		D16E0E901B9D55EF00AE2932 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D16E0E8F1B9D55EF00AE2932 /* CoreMotion.framework */; };
+		D16E0E961B9D62FB00AE2932 /* AGGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E951B9D62FB00AE2932 /* AGGameScene.m */; };
+		D16E0E991B9D6FD900AE2932 /* AGHeroSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0E981B9D6FD900AE2932 /* AGHeroSprite.m */; };
+		D16E0EA31B9E96FA00AE2932 /* AGBackgroundSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */; };
+		D1DDDFF11BA6879700EEAAD7 /* GameHeroImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +38,6 @@
 		D16E0E601B9D3EEC00AE2932 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D16E0E621B9D3EEC00AE2932 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D16E0E631B9D3EEC00AE2932 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D16E0E651B9D3EEC00AE2932 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
-		D16E0E661B9D3EEC00AE2932 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
 		D16E0E681B9D3EEC00AE2932 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		D16E0E6A1B9D3EEC00AE2932 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		D16E0E6B1B9D3EEC00AE2932 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 		D16E0E791B9D3EEC00AE2932 /* GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D16E0E7E1B9D3EEC00AE2932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D16E0E7F1B9D3EEC00AE2932 /* GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameTests.m; sourceTree = "<group>"; };
+		D16E0E8F1B9D55EF00AE2932 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		D16E0E941B9D62FB00AE2932 /* AGGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGGameScene.h; sourceTree = "<group>"; };
+		D16E0E951B9D62FB00AE2932 /* AGGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGGameScene.m; sourceTree = "<group>"; };
+		D16E0E971B9D6FD900AE2932 /* AGHeroSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGHeroSprite.h; sourceTree = "<group>"; };
+		D16E0E981B9D6FD900AE2932 /* AGHeroSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGHeroSprite.m; sourceTree = "<group>"; };
+		D16E0EA11B9E96FA00AE2932 /* AGBackgroundSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGBackgroundSprite.h; sourceTree = "<group>"; };
+		D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGBackgroundSprite.m; sourceTree = "<group>"; };
+		D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = GameHeroImages.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16E0E901B9D55EF00AE2932 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +79,7 @@
 		D16E0E521B9D3EEC00AE2932 = {
 			isa = PBXGroup;
 			children = (
+				D16E0E8F1B9D55EF00AE2932 /* CoreMotion.framework */,
 				D16E0E5D1B9D3EEC00AE2932 /* Game */,
 				D16E0E7C1B9D3EEC00AE2932 /* GameTests */,
 				D16E0E5C1B9D3EEC00AE2932 /* Products */,
@@ -88,15 +100,20 @@
 			children = (
 				D16E0E621B9D3EEC00AE2932 /* AppDelegate.h */,
 				D16E0E631B9D3EEC00AE2932 /* AppDelegate.m */,
-				D16E0E651B9D3EEC00AE2932 /* GameScene.h */,
-				D16E0E661B9D3EEC00AE2932 /* GameScene.m */,
 				D16E0E681B9D3EEC00AE2932 /* GameScene.sks */,
 				D16E0E6A1B9D3EEC00AE2932 /* GameViewController.h */,
+				D1DDDFF01BA6879700EEAAD7 /* GameHeroImages.atlas */,
 				D16E0E6B1B9D3EEC00AE2932 /* GameViewController.m */,
 				D16E0E6D1B9D3EEC00AE2932 /* Main.storyboard */,
 				D16E0E701B9D3EEC00AE2932 /* Images.xcassets */,
 				D16E0E721B9D3EEC00AE2932 /* LaunchScreen.xib */,
 				D16E0E5E1B9D3EEC00AE2932 /* Supporting Files */,
+				D16E0E941B9D62FB00AE2932 /* AGGameScene.h */,
+				D16E0E951B9D62FB00AE2932 /* AGGameScene.m */,
+				D16E0E971B9D6FD900AE2932 /* AGHeroSprite.h */,
+				D16E0E981B9D6FD900AE2932 /* AGHeroSprite.m */,
+				D16E0EA11B9E96FA00AE2932 /* AGBackgroundSprite.h */,
+				D16E0EA21B9E96FA00AE2932 /* AGBackgroundSprite.m */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -171,11 +188,13 @@
 		D16E0E531B9D3EEC00AE2932 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = AG;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Aximedia Soft";
 				TargetAttributes = {
 					D16E0E5A1B9D3EEC00AE2932 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = HRG8K62TZ7;
 					};
 					D16E0E781B9D3EEC00AE2932 = {
 						CreatedOnToolsVersion = 6.4;
@@ -211,6 +230,7 @@
 				D16E0E711B9D3EEC00AE2932 /* Images.xcassets in Resources */,
 				D16E0E691B9D3EEC00AE2932 /* GameScene.sks in Resources */,
 				D16E0E6F1B9D3EEC00AE2932 /* Main.storyboard in Resources */,
+				D1DDDFF11BA6879700EEAAD7 /* GameHeroImages.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +250,9 @@
 			files = (
 				D16E0E6C1B9D3EEC00AE2932 /* GameViewController.m in Sources */,
 				D16E0E641B9D3EEC00AE2932 /* AppDelegate.m in Sources */,
-				D16E0E671B9D3EEC00AE2932 /* GameScene.m in Sources */,
+				D16E0EA31B9E96FA00AE2932 /* AGBackgroundSprite.m in Sources */,
+				D16E0E961B9D62FB00AE2932 /* AGGameScene.m in Sources */,
+				D16E0E991B9D6FD900AE2932 /* AGHeroSprite.m in Sources */,
 				D16E0E611B9D3EEC00AE2932 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Game/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +450,7 @@
 				D16E0E851B9D3EEC00AE2932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D16E0E861B9D3EED00AE2932 /* Build configuration list for PBXNativeTarget "GameTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +459,7 @@
 				D16E0E881B9D3EED00AE2932 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
